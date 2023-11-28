@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="../css/explorarCss.css">
+</head>
+<body>
+
+
+
+    
+  <nav class="menuStart">
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="noticias.html">Noticias Stock</a></li>
+        <li><button><a href="carrito.html"><img src="../assets/img/Icons/shopBag.svg" alt="My Happy SVG" /></a></button></li>
+    </ul>
+  </nav>
+
+  
+  <div class="containerCards">
+    <div class="card">
+      <div class="images" onclick="openPopup('../assets/imgProductos/gabardinaNegra/darkCoat1.jpg')">
+        <img src="../assets/imgProductos/gabardinaNegra/darkCoat1.jpg">
+      </div>
+      <div class="organizer">
+        <div class="title">
+          <h4>Gaban Negra</h4>
+        </div>
+        <div class="price">
+          Precio: $120,000
+        </div>
+      <div class="description">
+        <p>Gaban de cuero color negro con cinturon ajustable y cadenas ajustables de color negro como accesorios</p>
+      </div>
+      <div class="buyButton">
+        <button>¡Agregar Producto!</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="card">
+      <div class="images" onclick="openPopup('../assets/imgProductos/anilloRed/AnilloRed.jpg')">
+        <img src="../assets/imgProductos/anilloRed/AnilloRed.jpg">
+      </div>
+      <div class="organizer">
+        <div class="title">
+          <h4>Anillo Rojo</h4>
+        </div>
+        <div class="price">
+          Precio: $70,000
+        </div>
+      <div class="description">
+        <p>Anillo Rojo Unisex Acero Inoxidable</p>
+      </div>
+      <div class="buyButton">
+        <button>¡Agregar Producto!</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="popup-img" id="popup">
+      <span onclick="closePopup()">X</span>
+      <img id="popupImage">
+    </div>
+    
+
+
+    
+
+    <script src="../JavaScript/logica.js"></script>
+
+</body>
+</html>
