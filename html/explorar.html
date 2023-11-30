@@ -8,6 +8,8 @@
 </head>
 <body>
 
+
+
     
   <nav class="menuStart">
     <ul>
@@ -15,12 +17,156 @@
         <li><a href="catalogo.html">Catalogo</a></li>
         <li><a href="explorar.html">Explorar</a></li>
         <li><a href="noticias.html">Noticias Stock</a></li>
+        <li><button><a href="#carrito"><img src="../assets/img/Icons/shopBag.svg" alt="My Happy SVG" /></a></button></li>
+
     </ul>
   </nav>
 
-
   
+  <div class="containerCards">
+
+    <div class="item" id="product1">
+      <div class="item-images" onclick="openPopup('../assets/imgProductos/gabardinaNegra/darkCoat1.jpg')">
+        <img src="../assets/imgProductos/gabardinaNegra/darkCoat1.jpg">
+      </div>
+      <div class="organizer">
+        <div class="item-title">
+          <h4>Gaban Negra</h4>
+        </div>
+        <div class="item-price">
+          Precio: $120,000
+        </div>
+        <div class="item-categoryCatcher">
+          <p>ROPA INFORMAL</p>
+        </div>
+      <div class="item-description">
+        <p>Gaban de cuero color negro con cinturon ajustable y cadenas ajustables de color negro como accesorios <br>
+          Tamaño: Por tallas <br>
+          Elementos populares: Cadenas <br>
+          Clasificación de estilo: Gotico <br>
+          Publico dirigido: Unisex <br>
+        </p>
+      </div>
+      <div class="buyButton">
+        <button class="buyButtonE">¡Agregar Producto!</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="item" id="product2">
+      <div class="item-images" onclick="openPopup('../assets/imgProductos/anilloRed/AnilloRed.jpg')">
+        <img src="../assets/imgProductos/anilloRed/AnilloRed.jpg">
+      </div>
+      <div class="organizer">
+        <div class="item-title">
+          <h4>Anillo Rojo</h4>
+        </div>
+        <div class="item-price">
+          Precio: $70,000
+        </div>
+        <div class="item-categoryCatcher">
+          <p>JOYA</p>
+        </div>
+      <div class="item-description">
+        <p>Anillo rojo de acero Joya roja
+          Tamaño: apertura ajustable <br>
+          Elementos populares: Joya <br>
+          Clasificación de estilo: tendencia de personalidad. <br>
+          Publico dirigido: Unisex <br></p>
+      </div>
+      <div class="buyButton">
+        <button class="buyButtonE">¡Agregar Producto!</button>
+      </div>
+    </div>
+    </div>
+      
+    <div class="item" id="product3">
+      <div class="item-images" onclick="openPopup('../assets/imgProductos/viceraNegra/vicNegra.jpg')">
+        <img src="../assets/imgProductos/viceraNegra/vicNegra.jpg">
+      </div>
+      <div class="organizer">
+        <div class="item-title">
+          <h4>Vicera Negra</h4>
+        </div>
+        <div class="item-price">
+          Precio: $90,000 
+        </div>
+        <div class="item-categoryCatcher">
+          <p>OTRAS COSAS</p>
+        </div>
+      <div class="item-description">
+        <p>Vicera color Negro Multiuso
+          Tamaño: ajustable <br>
+          Elementos populares: N/A <br>
+          Clasificación de estilo: Seguridad <br>
+          Publico dirigido: Unisex <br></p>
+      </div>
+      <div class="buyButton">
+        <button class="buyButtonE">¡Agregar Producto!</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="popup-img" id="popup">
+      <span onclick="closePopup()">X</span>
+      <img id="popupImage">
+    </div>
+
+
 
     
+<div id="carrito" class="fatherContainerShoppingCart">
+  <div class="shoppingCartContainer">
+    <div class="cart-indicate">
+        <div class="cart-title">
+            <h2>Carrito</h2>
+        </div>
+    </div>
+  </div>
+  
+        <div class="itemsToCart">
+  
+  
+        </div>
+</div>
+  
+
+<div class="confirmShop">
+    <div class="cart-total">
+      <h4>Total: $0</h4>
+    </div>
+
+    <div class="cart-button-buy">
+      <button>Confirmar</button>
+    </div>
+</div>
+  
+  
+    
+
+    <footer>
+      <div class="listInfoFooter">
+        <ul>
+          <li>Avenida 14</li>
+          <li>018000444</li>
+          <li><img src="../assets/img/Icons/twitter.svg" alt="My Happy SVG" /></li>
+          <li>StockHub@gmail.com</li>
+        </ul>
+        <ul>
+          <li>Calle 13</li>
+          <li>+57 943539453</li>
+          <li><img src="../assets/img/Icons/whatsApp.svg" alt="My Happy SVG" /></li>
+          <li>StaffStock@gmail.com</li>
+        </ul>
+      </div>
+      <li>Copyright &copy; All Rights Deserved</li>
+      </footer>
+
+      <script src="../JavaScript/logica.js"></script>
+
+
+
 </body>
 </html>

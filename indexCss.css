@@ -58,6 +58,19 @@ h1 {
   height: 8vh; 
 }
 
+.menuStart button{
+  background-color: #000000;
+  border-style: none;
+  padding: 0;
+}
+
+
+.menuStart button:hover{
+  background-color: #4d4d4d;
+  border-style: none;
+  padding: 0;
+}
+
 ul {
   list-style: none;
   display: flex;
