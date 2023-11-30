@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
   // console.log('Info Item', item)
@@ -74,3 +75,45 @@ let popupImage = document.getElementById('popupImage');
 
 
     
+=======
+
+ 
+  
+
+  //The carrito
+
+  let addItemToCarBtn = document.querySelectorAll(".buyButtonE");
+
+  addItemToCarBtn.forEach((addToCartButton) => {
+
+    addToCartButton.addEventListener('click', () => console.log('click'));
+
+  });
+
+  function addItemClick (event) {
+    
+  }
+
+
+
+
+
+
+
+
+   //PopUp
+   let popup = document.getElementById('popup');
+   let popupImage = document.getElementById('popupImage');
+  
+    function openPopup(imgSrc) {
+      popupImage.src = imgSrc;
+      popup.style.display = 'flex';
+    }
+  
+    function closePopup() {
+      popup.style.display = 'none';
+    }
+
+
+
+>>>>>>> aa3319cbc4b02383e783518ec3afc85d852a02a8
