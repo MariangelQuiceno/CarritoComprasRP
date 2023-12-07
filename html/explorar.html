@@ -3,261 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/explorarCss.css">
 </head>
-
 <body>
 
-
-
-    
   <nav class="menuStart">
     <ul>
         <li><a href="../index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catalogo</a></li>
-        <li><a href="explorar.html">Explorar</a></li>
-        <li><a href="noticias.html">Noticias Stock</a></li>
-        <li><button><a href="#carrito"><img src="../assets/img/Icons/shopBag.svg" alt="My Happy SVG" /></a></button></li>
+        <li><a href="./explorar.html">Explorar</a></li>
+        <li><a href="./html/noticias.html">Noticias Stock</a></li>
+        <li><button><a href="explorar.html#carrito"><img src="../assets/img/Icons/shopBag.svg" alt="My Happy SVG"></a></button></li>
 
     </ul>
-  </nav>
+</nav>
+
+
+    <div class="containerCards">
+
+      
+    </div>
+
+
+        
+    <div class="popup-img" id="popup">
+        <span onclick="closePopup()">X</span>
+        <img id="popupImage">
+      </div>
+  
 
   
-  <div class="containerCards">
-
-    <div class="item" id="product1">
-      <div class="item-images" onclick="openPopup('../assets/imgProductos/gabardinaNegra/darkCoat1.jpg')">
-        <img src="../assets/imgProductos/gabardinaNegra/darkCoat1.jpg">
-      </div>
-      <div class="organizer">
-        <div class="item-title">
-          <h4>Gaban Negra</h4>
-        </div>
-        <div class="item-price">
-          Precio: $120,000
-        </div>
-        <div class="item-categoryCatcher">
-          <p>ROPA INFORMAL</p>
-        </div>
-      <div class="item-description">
-        <p>Gaban de cuero color negro con cinturon ajustable y cadenas ajustables de color negro como accesorios <br>
-          Tamaño: Por tallas <br>
-          Elementos populares: Cadenas <br>
-          Clasificación de estilo: Gotico <br>
-          Publico dirigido: Unisex <br>
-        </p>
-      </div>
-      <div class="buyButton">
-        <button class="buyButtonE">¡Agregar Producto!</button>
+  
+  
+  <!-- HTML -->
+  <div id="carrito" class="fatherContainerShoppingCart">
+    <div class="shoppingCartContainer">
+      <div class="cart-indicate">
+          <div class="cart-title">
+              <h2>Carrito</h2>
+          </div>
       </div>
     </div>
-    </div>
-
-    <div class="item" id="product2">
-      <div class="item-images" onclick="openPopup('../assets/imgProductos/anilloRed/AnilloRed.jpg')">
-        <img src="../assets/imgProductos/anilloRed/AnilloRed.jpg">
-      </div>
-      <div class="organizer">
-        <div class="item-title">
-          <h4>Anillo Rojo</h4>
-        </div>
-        <div class="item-price">
-          Precio: $70,000
-        </div>
-        <div class="item-categoryCatcher">
-          <p>JOYA</p>
-        </div>
-      <div class="item-description">
-        <p>Anillo rojo de acero Joya roja
-          Tamaño: apertura ajustable <br>
-          Elementos populares: Joya <br>
-          Clasificación de estilo: tendencia de personalidad. <br>
-          Publico dirigido: Unisex <br></p>
-      </div>
-      <div class="buyButton">
-        <button class="buyButtonE">¡Agregar Producto!</button>
-      </div>
-    </div>
-    </div>
-      
-    <div class="item" id="product3">
-      <div class="item-images" onclick="openPopup('../assets/imgProductos/viceraNegra/vicNegra.jpg')">
-        <img src="../assets/imgProductos/viceraNegra/vicNegra.jpg">
-      </div>
-      <div class="organizer">
-        <div class="item-title">
-          <h4>Vicera Negra</h4>
-        </div>
-        <div class="item-price">
-          Precio: $90,000 
-        </div>
-        <div class="item-categoryCatcher">
-          <p>OTRAS COSAS</p>
-        </div>
-      <div class="item-description">
-        <p>Vicera color Negro Multiuso
-          Tamaño: ajustable <br>
-          Elementos populares: N/A <br>
-          Clasificación de estilo: Seguridad <br>
-          Publico dirigido: Unisex <br></p>
-      </div>
-      <div class="buyButton">
-        <button class="buyButtonE">¡Agregar Producto!</button>
-      </div>
-    </div>
-    </div>
-
-    <div class="item" id="product4">
-      <div class="item-images" onclick="openPopup('../assets/imgProductos/cadenasCuerpo/cadenaCuerpo1.jpg')">
-        <img src="../assets/imgProductos/cadenasCuerpo/cadenaCuerpo1.jpg">
-      </div>
-      <div class="organizer">
-        <div class="item-title">
-          <h4>Cadenas</h4>
-        </div>
-        <div class="item-price">
-          Precio: $50,000
-        </div>
-        <div class="item-categoryCatcher">
-          <p>ACCESORIO</p>
-        </div>
-      <div class="item-description">
-        <p>Cadenas plateadas accesorio Halloween <br>
-          Tamaño: Por tallas <br>
-          Elementos populares: Cadenas <br>
-          Clasificación de estilo: Gotico <br>
-          Publico dirigido: Unisex <br>
-        </p>
-      </div>
-      <div class="buyButton">
-        <button class="buyButtonE">¡Agregar Producto!</button>
-      </div>
-    </div>
-    </div>
-
     
-    <div class="item" id="product5">
-      <div class="item-images" onclick="openPopup('../assets/imgProductos/vestidos/vestidoElegante.jpg')">
-        <img src="../assets/imgProductos/vestidos/vestidoElegante.jpg">
-      </div>
-      <div class="organizer">
-        <div class="item-title">
-          <h4>Vestido</h4>
-        </div>
-        <div class="item-price">
-          Precio: $100,000
-        </div>
-        <div class="item-categoryCatcher">
-          <p>ROPA FORMAL</p>
-        </div>
-      <div class="item-description">
-        <p>Vestido formal color hueso <br>
-          Tamaño: Por tallas <br>
-          Elementos populares: Cadenas <br>
-          Clasificación de estilo: Gotico <br>
-          Publico dirigido: Unisex <br>
-        </p>
-      </div>
-      <div class="buyButton">
-        <button class="buyButtonE">¡Agregar Producto!</button>
-      </div>
+    <div class="itemsToCart"></div>
+  </div>
+  
+  <div class="confirmShop">
+    <div class="cart-total" id="cart-total">
+      <h4>Total: $0</h4>
     </div>
-    </div>
-
-    
-    <div class="item" id="product6">
-      <div class="item-images" onclick="openPopup('../assets/imgProductos/pinInsecto/pinInsecto.jpg')">
-        <img src="../assets/imgProductos/pinInsecto/pinInsecto.jpg">
-      </div>
-      <div class="organizer">
-        <div class="item-title">
-          <h4>Pin Escarabajo</h4>
-        </div>
-        <div class="item-price">
-          Precio: $20,000
-        </div>
-        <div class="item-categoryCatcher">
-          <p>ACCESORIO</p>
-        </div>
-      <div class="item-description">
-        <p>Pin Insecto Pequeño <br>
-          Tamaño: 12*10 cm <br>
-          Elementos populares: Accesorio <br>
-          Clasificación de estilo: Natural <br>
-          Publico dirigido: Unisex <br>
-        </p>
-      </div>
-      <div class="buyButton">
-        <button class="buyButtonE">¡Agregar Producto!</button>
-      </div>
-    </div>
-    </div>
-
-
-
-
-    </div>
-
-
-    <div class="popup-img" id="popup">
-      <span onclick="closePopup()">X</span>
-      <img id="popupImage">
-    </div>
-
-
-
-    
-<div id="carrito" class="fatherContainerShoppingCart">
-  <div class="shoppingCartContainer">
-    <div class="cart-indicate">
-        <div class="cart-title">
-            <h2>Carrito</h2>
-        </div>
+  
+    <div class="cart-button-buy">
+      <button onclick="confirmPurchase()">Confirmar</button>
     </div>
   </div>
   
-        <div class="itemsToCart">
-  
-  
-        </div>
-</div>
-  
-
-<div class="confirmShop">
-    <div class="cart-total">
-      <h4>Total: $0</h4>
-    </div>
-
-    <div class="cart-button-buy">
-      <button>Confirmar</button>
-    </div>
-</div>
-  
-  
     
+    
+      
+  
+      <footer>
+        <div class="listInfoFooter">
+          <ul>
+            <li>Avenida 14</li>
+            <li>018000444</li>
+            <li><img src="../assets/img/Icons/twitter.svg" alt="My Happy SVG" /></li>
+            <li>StockHub@gmail.com</li>
+          </ul>
+          <ul>
+            <li>Calle 13</li>
+            <li>+57 943539453</li>
+            <li><img src="../assets/img/Icons/whatsApp.svg" alt="My Happy SVG" /></li>
+            <li>StaffStock@gmail.com</li>
+          </ul>
+        </div>
+        <li>Copyright &copy; All Rights Deserved</li>
+        </footer>
+  
+ 
+<script src="../JavaScript/localStorage.js"></script>
 
-    <footer>
-      <div class="listInfoFooter">
-        <ul>
-          <li>Avenida 14</li>
-          <li>018000444</li>
-          <li><img src="../assets/img/Icons/twitter.svg" alt="My Happy SVG" /></li>
-          <li>StockHub@gmail.com</li>
-        </ul>
-        <ul>
-          <li>Calle 13</li>
-          <li>+57 943539453</li>
-          <li><img src="../assets/img/Icons/whatsApp.svg" alt="My Happy SVG" /></li>
-          <li>StaffStock@gmail.com</li>
-        </ul>
-      </div>
-      <li>Copyright &copy; All Rights Deserved</li>
-      </footer>
+<script src="../JavaScript/insertToCar.js"></script>
 
-      <script src="../JavaScript/logica.js"></script>
+<script src="../JavaScript/popupImg.js"></script>
 
 
 
+
+  
+
+  
+  
+
+    
 </body>
 </html>

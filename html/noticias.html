@@ -13,7 +13,6 @@
   <nav class="menuStart">
     <ul>
         <li><a href="../index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catalogo</a></li>
         <li><a href="explorar.html">Explorar</a></li>
         <li><a href="noticias.html">Noticias Stock</a></li>
         <li><button><a href="explorar.html#carrito"><img src="../assets/img/Icons/shopBag.svg" alt="My Happy SVG"></a></button></li>
@@ -27,3 +26,29 @@
     
 </body>
 </html>
+
+
+<div class="item" id="${element.id}">
+  <div class="item-images" onclick="openPopup('${element.image}')">
+      <img src="${element.image}">
+  </div>
+  <div class="organizer">
+  <div class="item-title">
+      <h4>${element.name}</h4>
+  </div>
+  <div class="item-amount">
+      <h4>Existencias: </h4>
+      <p id="amount-item1">${element.stock}</p>
+  </div>
+  <div class="item-price" id="price-product1">
+      <p>${element.price}</p>
+  </div>        
+  <div class="item-description">
+      <p>${element.description}</p>
+  </div>
+  <div class="buyButton">
+      <button class="buyButtonE" onclick="updateShoppingCartTotal()">¡Agregar Producto!</button>
+
+  </div>
+  </div>
+  </div>
