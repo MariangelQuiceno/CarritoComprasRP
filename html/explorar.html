@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar</title>
+    <link rel="stylesheet" href="../css/explorarCss.css">
+</head>
+<body>
+
+  <nav class="menuStart">
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./explorar.html">Explorar</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><button><a href="explorar.html#carrito"><img src="../assets/img/Icons/shopBag.svg" alt="Shop Car Icon"></a></button></li>
+
+    </ul>
+</nav>
+
+
+    <div class="containerCards">
+
+      
+    </div>
+
+
+        
+    <div class="popup-img" id="popup">
+        <span onclick="closePopup()">X</span>
+        <img id="popupImage">
+      </div>
+  
+
+  
+  
+  
+  <!-- HTML -->
+  <div id="carrito" class="fatherContainerShoppingCart">
+    <div class="shoppingCartContainer">
+      <div class="cart-indicate">
+          <div class="cart-title">
+              <h2>Carrito</h2>
+          </div>
+      </div>
+    </div>
+    
+    <div class="itemsToCart"></div>
+  </div>
+  
+  <div class="confirmShop">
+    <div class="cart-total" id="cart-total">
+      <h4>Total: $0</h4>
+    </div>
+  
+    <div class="cart-button-buy">
+      <button onclick="confirmPurchase()">Confirmar</button>
+    </div>
+  </div>
+  
+    
+    
+      
+  
+      <footer>
+        <div class="listInfoFooter">
+          <ul>
+            <li>Avenida 14</li>
+            <li>018000444</li>
+            <li><img src="../assets/img/Icons/twitter.svg" alt="WhatsApp Icon" /></li>
+            <li>StockHub@gmail.com</li>
+          </ul>
+          <ul>
+            <li>Calle 13</li>
+            <li>+57 943539453</li>
+            <li><img src="../assets/img/Icons/whatsApp.svg" alt="Twitter Icon" /></li>
+            <li>StaffStock@gmail.com</li>
+          </ul>
+        </div>
+        <li>Copyright &copy; All Rights Deserved</li>
+        </footer>
+  
+ 
+<script src="../JavaScript/localStorage.js"></script>
+
+<script src="../JavaScript/insertToCar.js"></script>
+
+<script src="../JavaScript/popupImg.js"></script>
+
+
+
+
+  
+
+  
+  
+
+    
+</body>
+</html>
