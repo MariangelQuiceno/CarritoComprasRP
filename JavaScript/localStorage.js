@@ -246,14 +246,14 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
     ];
-    
+
     localStorage.setItem("listaProductos", JSON.stringify(listaProductos))
-    
+
     listaProductos.forEach(element => {
         let containerCards = document.querySelector(".containerCards");
         let card = document.createElement("div");
         card.classList.add("item");
-        card.id = "product" + element.id; 
+        card.id = "product" + element.id;
         card.innerHTML = `
         <div class="item-images" onclick="openPopup('${element.image}')">
             <img src="${element.image}">
@@ -276,13 +276,12 @@ document.addEventListener('DOMContentLoaded', function () {
             <button class="buyButtonE" onclick="updateCartAndEvents()">¡Agregar Producto!</button>
             </div>
         </div>`;
-    
         containerCards.appendChild(card);
     });
 
 
-    });
-    
+});
+
 
 
 

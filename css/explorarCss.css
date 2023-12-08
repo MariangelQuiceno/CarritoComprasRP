@@ -264,13 +264,12 @@ body {
 
 
 
+
 footer{
   padding: 2rem;
-  display: flex;
   flex-direction: column;
   list-style: none;
   background-color: #000000;
-  height: 15vh;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -289,5 +288,80 @@ footer{
 
 .listInfoFooter li{
   display: flex;
+
+}
+
+
+
+@media (max-width: 352px) {
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    text-align: center;
+    padding: 1vw;
+}
+
+footer{
+  padding: 0;
+}
+
+.listInfoFooter {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.listInfoFooter li {
+  margin-bottom: 5px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.listInfoFooter ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmShop {
+  padding: 0; 
+}
+
+
+.containerCards {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containerCards .item {
+
+    width: 100%;
+    margin: 33px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    transition: all 0.25s;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.menuStart {
+  height: 12vh;
+}
+
+.add-img-item {
+  padding-right: 7px;
+}
+
+.add-amount-item{
+    padding-left: 14px;
+}
 
 }

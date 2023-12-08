@@ -1,7 +1,4 @@
 
-
-  
-  
   let popup = document.getElementById('popup');
   let popupImage = document.getElementById('popupImage');
   

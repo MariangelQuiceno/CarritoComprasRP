@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const shoppingCartContainerElement = document.querySelector('.fatherContainerShoppingCart');
+
+  const shoppingCartContainerElement = document.querySelector('.fatherContainerShoppingCart'); //Selecciona  EL div padre
   const cartTotalElement = document.getElementById('cart-total');
 
-  // Cargar elementos existentes en el carrito desde localStorage
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || []; // Cargar elementos existentes en el carrito desde localStorage
 
   function updateCart() {
-    // Calcular la suma total del carrito
     let total = 0;
-    cart.forEach(cartItem => {
+    cart.forEach(cartItem => { // Calcula la suma total del carrito
       total += cartItem.price;
     });
 
-    // Actualizar el elemento HTML que muestra el total
-    cartTotalElement.innerHTML = `<h4>Total: $${total.toFixed(2)}</h4>`;
+    
+    cartTotalElement.innerHTML = `<h4>Total: $${total.toFixed(2)}</h4>`; // Actualiza el elemento HTML que muestra el total
   }
 
   function displayCartItem(cartItem, index) {
-    const shoppingCartRow = document.createElement('div');
+    const shoppingCartRow = document.createElement('div'); // Crea el elemnto del carrito, funciona como una plantilla
     let shoppingCartContent = `
       <div class="itemsToCart">
         <div class="add-img-item">
@@ -38,26 +38,26 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function updateCartAndEvents() {
-    // Limpiar el contenido actual del contenedor del carrito
-    shoppingCartContainerElement.innerHTML = '';
+    
+    shoppingCartContainerElement.innerHTML = ''; // Limpiar el contenido actual del contenedor del carrito
 
-    // Mostrar todos los elementos del carrito nuevamente
+    
     cart.forEach((cartItem, index) => {
-      displayCartItem(cartItem, index);
+      displayCartItem(cartItem, index); // Mostrar todos los elementos del carrito nuevamente
     });
 
-    // Actualizar el total y eventos click en los botones de eliminar
+    
     updateCart();
-    updateDeleteButtonEvents();
+    updateDeleteButtonEvents(); // Actualizar el total y eventos click en los botones de eliminar
   }
 
   function updateDeleteButtonEvents() {
-    const deleteButtons = document.querySelectorAll(".buttonDelete");
+    const deleteButtons = document.querySelectorAll(".buttonDelete"); // selecciona el boton de borrar
 
     deleteButtons.forEach(deleteButton => {
       deleteButton.removeEventListener('click', handleDeleteButtonClick);
     });
-
+                                                                            // Ayuda a controlar los eventos del boton Delete
     deleteButtons.forEach(deleteButton => {
       deleteButton.addEventListener('click', handleDeleteButtonClick);
     });
@@ -66,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleDeleteButtonClick(event) {
     const button = event.target;
     const index = parseInt(button.getAttribute('data-index'));
-
-    // Eliminar el elemento del carrito y actualizar
+                                // Eliminar el elemento del carrito y actualizar, principalmente porque evita un error al borrar elementos del carro
     cart.splice(index, 1);
     updateCartAndEvents();
 
@@ -81,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
   function confirmPurchase() {
     // Mensaje de alerta con el resumen de la compra
     alert(`¡Compra realizada!\nTotal: $${cartTotalElement.textContent.split('$')[1]}`);
-    
-    // Limpiar el carrito después de la compra
+
+    // Limpiar el carrito después de la compra, elimina los elementos
     cart = [];
     updateCartAndEvents();
 
